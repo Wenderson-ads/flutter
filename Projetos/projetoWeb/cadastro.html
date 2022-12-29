@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        article h1 {
+            font-size: 15px;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, .3);
+            padding: 5px;
+            margin: 0px;
+        }
+
+        article h2 {
+            font-size: 13px;
+            color: #888888;
+            margin: 0px;
+        }
+
+        article {
+            margin-bottom: 800px;
+        }
+
+        img.img-dir {
+            display: block;
+            float: right;
+            margin-left: 5px;
+        }
+
+        iframe#frame-quest {
+            width: 1000px;
+            height: 600px;
+            border: none;
+            scroll-padding: unset;
+        }
+
+        iframe#frame-quest {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        iframe#frame-quest::-webkit-scrollbar {
+            -webkit-overflow-scrolling: touch;
+            display: none;
+        }
+
+        input#codigo {
+
+            size: 5px;
+
+        }
+    </style>
+
+    <title>Cadastro Novo Mundo</title>
+    <link rel="stylesheet" href="_css/stilo.css" />
+    <link rel="icon" href="_imagens/cadastro.png" type="image/x-icon">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script language="javascript" src="_javascript/cidades.js"></script>
+</head>
+
+<body>
+
+    <article id="dados-pessoais">
+        <table id="tabelaq1">
+
+            <tr>
+
+                <form method="get" action="envio_dados.php">
+                    <label for="cnasc">Código: <br /> </label>
+                    <input id="codigo" type="text" name="Codigo" placeholder="0">
+                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+                    <input type="date" name="enviar" value="Enviar">
+
+                </form>
+            </tr>
+
+
+            
+            <tr>
+
+                <form method="get" action="envio_dados.php">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="email" placeholder="Digite seu e-mail"> 
+                    <input type="submit" name="enviar" value="Enviar">
+
+                </form>
+            </tr>
+
+
+        </table>
+    </article>
+
+</body>
+
+</html>
