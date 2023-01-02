@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+
     <style>
         body {
             font-family: Arial;
@@ -23,9 +24,10 @@
         }
 
         article h2 {
-            font-size: 13px;
-            color: #888888;
+            font-size: 25px;
+            color: black;
             margin: 0px;
+            text-align: center;
         }
 
         article {
@@ -57,8 +59,34 @@
 
         input#codigo {
 
-            size: 5px;
+            border-radius: 8px;
 
+        }
+
+        input#foto {
+            border-radius: 50px;
+        }
+
+        label#tam {
+
+            font-weight: 700;
+            font-size: 15px;
+            font-variant: small-caps;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table#tabela1 {
+
+            margin-left: 50px;
+            background-color: rgb(156, 156, 156);
+            border-radius: 10px;
+
+
+        }
+        select#selec{
+
+            border-radius: 8px;
         }
     </style>
 
@@ -72,33 +100,121 @@
 <body>
 
     <article id="dados-pessoais">
-        <table id="tabelaq1">
+        <table id="tabela1">
+
+
+            <div id="titulo">
+                <h2>Cadastro Funcionário</h2>
+            </div>
+
+
+            <form id="form1" method="get" action="envio_dados.php"></form>
+
 
             <tr>
+                <td>
+                    <label id="tam" for="cnasc">Código: <br /> </label>
+                    <input id="codigo" type="text" name="Codigo" placeholder="" style="width: 40px;">
+                </td>
 
-                <form method="get" action="envio_dados.php">
-                    <label for="cnasc">Código: <br /> </label>
-                    <input id="codigo" type="text" name="Codigo" placeholder="0">
-                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
-                    <input type="date" name="enviar" value="Enviar">
+                <td></td>
+                <td></td>
+                <td></td>
 
-                </form>
+                <td>
+                    <label id="tam" for="cdata">Data: <br></label>
+                    <input id="codigo" type="date" name="data">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <label id="tam" for="cnasc">Matrícula: <br /> </label>
+                    <input id="codigo" type="text" name="matricula" placeholder="" style="width: 100px;">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <label id="tam" for="cnasc">Nome Colaborador: <br /> </label>
+                    <input id="codigo" type="text" name="matricula" placeholder="Digite o nome..."
+                        style="width: 400px;">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <label id="tam" for="cnasc">Admissão: <br /> </label>
+                    <input id="codigo" type="date" name="matricula" placeholder="">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <label id="tam" for="cnasc">Foto: <br /> </label>
+                    <input id="foto" type="file" name="fotoC" accept="image/*">
+
+                </td>
             </tr>
-
-
-            
-            <tr>
-
-                <form method="get" action="envio_dados.php">
-                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
-                    <input type="e-mail" name="email" placeholder="Digite seu e-mail"> 
-                    <input type="submit" name="enviar" value="Enviar">
-
-                </form>
-            </tr>
-
 
         </table>
+        <br>
+        <table id="tabela1">
+            <tr>
+                <td>
+                    <label id="tam" for="cnasc">Nome do Pai: <br /> </label>
+                    <input id="codigo" type="text" name="nomePai" style="width:563px;">
+                </td>
+                <td>
+                    <label id="tam" for="cnasc">Nome do Mãe: <br /> </label>
+                    <input id="codigo" type="text" name="nomePai" style="width:563px;">
+                </td>
+
+            </tr>
+        </table>
+        <br>
+        <table id="tabela1">
+            <tr>
+                <td>
+                    <label id="tam" for="esc">Grau de Instrução: <br /> </label>
+                    <select name="escolaridade" id="selec" style="width: 200px;">
+                        <option value="">Selecione...</option>
+                        <option value="">Ensino Fundamental</option>
+                        <option value="">Ensino Médio</option>
+                        <option value="">Ensino Superior</option>
+
+                    </select>
+                </td>
+
+                <td>
+                    <label id="tam" for="cnasc">Data Nasc:<br /> </label>
+                    <input id="codigo" type="date" name="dataNasc">
+                </td>
+                <td>
+                    <label id="tam" for="idade">Idade:<br /> </label>
+                    <input id="codigo" type="text" name="idade" style="width: 40px;">
+                </td>
+                <td>
+                    <label id="tam" for="idade">Nacionalidade:<br /> </label>
+                    <input id="codigo" type="text" name="idade" style="width: 200px;">
+                </td>
+                <td>
+                    <label id="tam" for="idade">Estado Civil:<br /> </label>
+                    <input id="codigo" type="text" name="idade" style="width: 200px;">
+                </td>
+
+
+            </tr>
+        </table>
+
+
+
+        </form>
+
     </article>
 
 </body>
