@@ -7,7 +7,7 @@ body {
 }
 
 div#container {
-    background-image: url("https://picfiles.alphacoders.com/211/211158.png");
+    background-image: url("./imagens/login.jpg");
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -27,7 +27,7 @@ h1#login {
 
     font: optional;
     margin-left: 150px;
-    margin-top: 80px;
+    margin-top: 40px;
 
 }
 
@@ -38,4 +38,8 @@ input#log {
     width: 300px;
     height: 30px;
     margin-left: 45px;
+}
+
+h4#msg {
+    margin-left: 44px;
 }
